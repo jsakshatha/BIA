@@ -1,135 +1,196 @@
-
-akshatha s <jsakshatha.shettigar@gmail.com>
-Mar 22, 2026, 7:16 PM (23 hours ago)
-to jsakshu.shettigar
-
-# 📊 All Chart Types in Power BI
-
-## 1. Basic Charts (Most Common)
-These charts are used for simple comparisons.
-
-- Bar Chart  
-- Column Chart  
-- Stacked Bar Chart  
-- Stacked Column Chart  
-- Clustered Bar Chart  
-- Clustered Column Chart  
-- 100% Stacked Bar Chart  
-- 100% Stacked Column Chart  
-
-**Use:** Compare values across categories  
+# 📊 Tableau Complete Guide (Superstore Dataset)
 
 ---
 
-## 2. Trend / Time-Based Charts
-These charts show changes over time.
+## 🔹 STEP 1: Connect to Data
 
-- Line Chart  
-- Area Chart  
-- Stacked Area Chart  
-
-**Use:** Show trends (e.g., sales over months)  
+1. Open Tableau Desktop  
+2. Click **Microsoft Excel**  
+3. Select **Sample - Superstore.xls**
 
 ---
 
-## 3. Part-to-Whole Charts
-These charts show proportions.
+## 🔹 STEP 2: Data Source Understanding
 
-- Pie Chart  
-- Donut Chart  
-- Treemap  
+### Tables Available:
+- Orders (Main table)
+- Returns
+- People
 
-**Use:** Show contribution or percentage  
+### Key Points:
+- Tableau auto-creates relationships  
+- Orders table contains:
+  - Customer info
+  - Product info
+  - Sales & Profit  
 
----
-
-## 4. Comparison & Distribution Charts
-Used for deeper data analysis.
-
-- Scatter Plot  
-- Bubble Chart  
-- Histogram *(custom visual)*  
-- Box & Whisker Plot *(custom visual)*  
-
-**Use:** Show relationships and data spread  
+👉 Click **Sheet 1** to start
 
 ---
 
-## 5. KPI & Performance Charts
-Used in dashboards to track performance.
+## 🔹 STEP 3: Tableau Interface
 
-- Card  
-- Multi-row Card  
-- KPI Visual  
-- Gauge Chart  
+### Sections:
+- **Columns Shelf** → X-axis  
+- **Rows Shelf** → Y-axis  
+- **Marks Card** → Color, Size, Label  
+- **Filters Shelf** → Apply filters  
+- **Show Me Panel** → Suggest charts  
 
-**Use:** Show targets and key metrics  
-
----
-
-## 6. Map-Based Charts
-Used for geographic data.
-
-- Map  
-- Filled Map  
-- Shape Map  
-- Azure Map  
-
-**Use:** Location-based insights  
+### Trainer Note:
+👉 Drag & Drop fields to create visuals
 
 ---
 
-## 7. Table-Based Visuals
-Used for detailed data view.
+## 🔹 STEP 4: Bar Chart (Sales by Category)
 
-- Table  
-- Matrix  
+### Steps:
+- Drag **Category → Rows**
+- Drag **Sales → Columns**
 
-**Use:** Display raw and summarized data  
-
----
-
-## 8. Advanced / AI Visuals
-Smart visuals for insights.
-
-- Decomposition Tree  
-- Key Influencers  
-- Q&A Visual  
-- Smart Narrative  
-
-**Use:** AI-based analysis and explanation  
+### Enhancement:
+- Drag **Sales → Label**
+- Click **Sort Descending**
 
 ---
 
-## 9. Filtering & Interaction Visuals
+## 🔹 STEP 5: Drill Down (Sub-Category)
 
-- Slicer  
+### Steps:
+- Drag **Sub-Category → Rows (below Category)**
 
-**Use:** Filter reports dynamically  
-
----
-
-## 10. Custom Visuals (Marketplace)
-Additional visuals from Power BI marketplace.
-
-- Waterfall Chart  
-- Funnel Chart  
-- Ribbon Chart  
-- Sankey Chart *(custom)*  
-- Word Cloud *(custom)*  
-- Radar Chart *(custom)*  
-
-**Use:** Advanced storytelling  
+👉 Creates hierarchical view
 
 ---
 
-## 🎓 Teaching Tip (Navigation Dashboard Idea)
+## 🔹 STEP 6: Profit Analysis
 
-- Button 1 → Basic Charts (Bar/Column)  
-- Button 2 → Trend Charts (Line/Area)  
-- Button 3 → Part-to-Whole (Pie/Donut)  
-- Button 4 → KPI Visuals  
-- Button 5 → Maps  
+### Steps:
+- Replace **Sales with Profit**
+- Drag **Profit → Columns**
 
-Use navigation buttons to switch between chart categories.
-trainers update. Press tab to insert.
+👉 Compare profitability
+
+---
+
+## 🔹 STEP 7: Line Chart (Sales Trend)
+
+### Steps:
+- Drag **Order Date → Columns**
+- Convert to **Month (Continuous)**
+- Drag **Sales → Rows**
+
+---
+
+## 🔹 STEP 8: Pie Chart (Sales by Region)
+
+### Steps:
+- Change Marks → **Pie**
+- Drag **Region → Color**
+- Drag **Sales → Angle**
+- Drag **Sales → Label**
+
+---
+
+## 🔹 STEP 9: Map (Sales by State)
+
+### Steps:
+- Drag **State → View**
+- Drag **Sales → Color**
+- Drag **Sales → Size**
+
+👉 Tableau auto-generates map
+
+---
+
+## 🔹 STEP 10: KPI (Total Sales)
+
+### Steps:
+- New Sheet
+- Drag **Sales → Text**
+
+### Format:
+- Increase font size  
+- Add currency symbol ₹  
+
+---
+
+## 🔹 STEP 11: Filters
+
+### Steps:
+- Drag **Region → Filters**
+- Right-click → **Show Filter**
+
+👉 Enables interactivity
+
+---
+
+## 🔹 STEP 12: Create Dashboard
+
+### Steps:
+1. Click **New Dashboard**
+2. Drag sheets:
+   - Bar Chart  
+   - Line Chart  
+   - Pie Chart  
+   - Map  
+   - KPI  
+
+---
+
+## 🔹 STEP 13: Interactivity
+
+### Steps:
+- Click any chart
+- Enable **Use as Filter**
+
+👉 Clicking one visual filters others
+
+---
+
+## 🔹 STEP 14: Navigation Buttons
+
+### Steps:
+- Go to Dashboard
+- Drag **Button**
+- Set action → Navigate to sheet
+
+---
+
+## 🔹 STEP 15: Formatting
+
+### Best Practices:
+- Remove grid lines  
+- Add titles  
+- Use consistent colors  
+- Align visuals properly  
+
+---
+
+# 📊 FINAL DASHBOARD LAYOUT
+
+- Top → KPI (Total Sales)  
+- Left → Category Bar Chart  
+- Right → Sales Trend  
+- Bottom → Map + Pie  
+
+---
+
+# ❌ COMMON MISTAKES
+
+- Confusing Dimension vs Measure  
+- Not changing date format  
+- Overloading dashboard  
+- Poor formatting  
+
+---
+
+# 🎓 TRAINER SCRIPT
+
+👉 “Connect data → Build visuals → Create dashboard → Add interactivity”
+
+---
+
+# 🚀 ADVANCED TOPICS
+
+## 🔹 Calculated Field (Profit Ratio)
